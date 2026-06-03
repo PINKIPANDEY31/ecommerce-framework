@@ -30,3 +30,9 @@ jobs:
         run: mvn clean test -DsuiteXmlFile=testng.xml
         env:
           CI: true
+
+      - name: Upload Allure Results
+        uses: actions/upload-artifact@v4
+        with:
+         name: allure-results
+         path: allure-results/
