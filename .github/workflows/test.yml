@@ -1,4 +1,4 @@
-name: Ecommerce Automation Tests
+name: Ecommerce Tests
 
 on:
   push:
@@ -21,17 +21,10 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Cache Maven dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+      - name: Build project
+        run: mvn clean compile
 
-      - name: Run TestNG Suite
+      - name: Run tests
         run: mvn clean test -DsuiteXmlFile=testng.xml
-
-      - name: Upload Test Reports
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: target/
+        env:
+          CI: true
