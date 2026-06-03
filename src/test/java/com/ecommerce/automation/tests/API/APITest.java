@@ -12,7 +12,7 @@ public class APITest {
         Response response = given()
                 .baseUri(ConfigReader.getProperty("api.url"))
                 .when()
-                .get("/students");
+                .get(ConfigReader.getProperty("endpoint1"));
         System.out.println("Status Code: " + response.getStatusCode());
     }
 }

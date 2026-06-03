@@ -28,3 +28,5 @@ jobs:
         run: mvn clean test -DsuiteXmlFile=testng.xml
         env:
           CI: true
+          on:
+            workflow_dispatch:
