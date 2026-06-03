@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-03T12:05:39 IST" name="Ecommerce Suite" finished-at="2026-06-03T12:05:42 IST" duration-ms="3392">
+  <suite started-at="2026-06-03T12:19:07 IST" name="Ecommerce Suite" finished-at="2026-06-03T12:19:11 IST" duration-ms="3433">
     <groups>
     </groups>
-    <test started-at="2026-06-03T12:05:39 IST" name="API Tests" finished-at="2026-06-03T12:05:39 IST" duration-ms="360">
+    <test started-at="2026-06-03T12:19:07 IST" name="API Tests" finished-at="2026-06-03T12:19:08 IST" duration-ms="349">
       <class name="com.ecommerce.automation.tests.API.APITest">
-        <test-method signature="getUserTest()[pri:0, instance:com.ecommerce.automation.tests.API.APITest@788fcafb]" started-at="2026-06-03T12:05:39 IST" name="getUserTest" finished-at="2026-06-03T12:05:39 IST" duration-ms="334" status="PASS">
+        <test-method signature="getUserTest()[pri:0, instance:com.ecommerce.automation.tests.API.APITest@788fcafb]" started-at="2026-06-03T12:19:07 IST" name="getUserTest" finished-at="2026-06-03T12:19:08 IST" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserTest -->
       </class> <!-- com.ecommerce.automation.tests.API.APITest -->
     </test> <!-- API Tests -->
-    <test started-at="2026-06-03T12:05:39 IST" name="UI Tests" finished-at="2026-06-03T12:05:42 IST" duration-ms="3392">
+    <test started-at="2026-06-03T12:19:07 IST" name="UI Tests" finished-at="2026-06-03T12:19:11 IST" duration-ms="3433">
       <class name="com.ecommerce.automation.tests.UI.AddToCartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.automation.tests.UI.AddToCartTest@478ee483]" started-at="2026-06-03T12:05:41 IST" name="setUp" finished-at="2026-06-03T12:05:42 IST" duration-ms="1238" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.automation.tests.UI.AddToCartTest@478ee483]" started-at="2026-06-03T12:19:09 IST" name="setUp" finished-at="2026-06-03T12:19:10 IST" duration-ms="1175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAddToCart()[pri:0, instance:com.ecommerce.automation.tests.UI.AddToCartTest@478ee483]" started-at="2026-06-03T12:05:42 IST" name="verifyAddToCart" finished-at="2026-06-03T12:05:42 IST" duration-ms="181" status="PASS">
+        <test-method signature="verifyAddToCart()[pri:0, instance:com.ecommerce.automation.tests.UI.AddToCartTest@478ee483]" started-at="2026-06-03T12:19:10 IST" name="verifyAddToCart" finished-at="2026-06-03T12:19:11 IST" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecommerce.automation.tests.UI.AddToCartTest@478ee483]" started-at="2026-06-03T12:05:42 IST" name="tearDown" finished-at="2026-06-03T12:05:42 IST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecommerce.automation.tests.UI.AddToCartTest@478ee483]" started-at="2026-06-03T12:19:11 IST" name="tearDown" finished-at="2026-06-03T12:19:11 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ecommerce.automation.tests.UI.AddToCartTest -->
       <class name="com.ecommerce.automation.tests.UI.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.automation.tests.UI.LoginTest@45905bff]" started-at="2026-06-03T12:05:39 IST" name="setUp" finished-at="2026-06-03T12:05:40 IST" duration-ms="1562" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.automation.tests.UI.LoginTest@45905bff]" started-at="2026-06-03T12:19:07 IST" name="setUp" finished-at="2026-06-03T12:19:09 IST" duration-ms="1671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAddToCart()[pri:0, instance:com.ecommerce.automation.tests.UI.LoginTest@45905bff]" started-at="2026-06-03T12:05:40 IST" name="verifyAddToCart" finished-at="2026-06-03T12:05:40 IST" duration-ms="225" status="PASS">
+        <test-method signature="verifyAddToCart()[pri:0, instance:com.ecommerce.automation.tests.UI.LoginTest@45905bff]" started-at="2026-06-03T12:19:09 IST" name="verifyAddToCart" finished-at="2026-06-03T12:19:09 IST" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecommerce.automation.tests.UI.LoginTest@45905bff]" started-at="2026-06-03T12:05:40 IST" name="tearDown" finished-at="2026-06-03T12:05:41 IST" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecommerce.automation.tests.UI.LoginTest@45905bff]" started-at="2026-06-03T12:19:09 IST" name="tearDown" finished-at="2026-06-03T12:19:09 IST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
