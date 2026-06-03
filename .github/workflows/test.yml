@@ -1,0 +1,30 @@
+name: Test Framework
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Run tests
+        run: mvn test
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: target/
