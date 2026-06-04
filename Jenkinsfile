@@ -5,26 +5,20 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-org/your-repo.git'
+                git 'https://github.com/PINKIPANDEY31/ecommerce-framework.git'
             }
         }
 
-        stage('Build') {
+        stage('Build & Test') {
             steps {
-                sh 'mvn clean compile'
+                sh 'mvn clean test -DsuiteXmlFile=testng.xml'
             }
         }
+    }
 
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
-
-        stage('Publish Reports') {
-            steps {
-                archiveArtifacts artifacts: 'target/**/*'
-            }
+    post {
+        always {
+            archiveArtifacts artifacts: 'target/**', allowEmptyArchive: true
         }
     }
 }
