@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                sh 'mvn clean test -DsuiteXmlFile=testng.xml'
+                sh '/opt/homebrew/bin/mvn clean test -DsuiteXmlFile=testng.xml'
             }
         }
     }
