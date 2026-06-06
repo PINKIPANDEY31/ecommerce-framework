@@ -2,16 +2,23 @@ pipeline {
     agent any
 
     stages {
-    stage('Show Workspace Files') {
-        steps {
-            sh 'pwd'
-            sh 'ls -la'
+
+        stage('Checkout Code') {
+            steps {
+                checkout scm
+            }
         }
-    }
+
+        stage('Show Workspace Files') {
+            steps {
+                sh 'pwd'
+                sh 'ls -la'
+            }
+        }
 
         stage('Build & Test') {
             steps {
-                sh '/opt/homebrew/bin/mvn clean test -DsuiteXmlFile=testng.xml'
+                sh 'mvn clean test -DsuiteXmlFile=testng.xml'
             }
         }
 
