@@ -3,6 +3,12 @@ pipeline {
 
     stages {
 
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+            }
+        }
+
         stage('Build & Test') {
             steps {
                 sh '/opt/homebrew/bin/mvn clean test -DsuiteXmlFile=testng.xml'
