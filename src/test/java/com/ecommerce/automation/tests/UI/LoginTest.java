@@ -16,28 +16,20 @@ public class LoginTest extends BaseTest {
 
 
     @Test(retryAnalyzer = com.ecommerce.automation.listeners.RetryAnalyzer.class)
-    public void verifyAddToCart() {
+    public void verifyValidLogin() {
         log.info("Application is logged in");
         LoginPage login = new LoginPage(driver);
         login.login(
                 JsonDataReader.get("username"),
                 JsonDataReader.get("password")
         );
-        //login.login("standard_user", "secret_sauce");
-
-        WaitUtils.waitForElement(
-                By.id("add-to-cart-sauce-labs-backpack")
-        ).click();
-
-        WaitUtils.waitForElement(
-                By.className("shopping_cart_link")
-        ).click();
-
         Assert.assertTrue(
-                driver.getPageSource().contains("Sauce Labs Backpack")
-
+                WaitUtils.waitForElement(
+                        By.xpath("//span[text()='Products']")
+                ).isDisplayed(),
+                "Login failed"
         );
-        //Assert.assertTrue(false);
+
 
     }
 }
