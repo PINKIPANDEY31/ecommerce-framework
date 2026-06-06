@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Clean Workspace') {
-            steps {
-                cleanWs()
-            }
+    stage('Show Workspace Files') {
+        steps {
+            sh 'pwd'
+            sh 'ls -la'
         }
+    }
 
         stage('Build & Test') {
             steps {
